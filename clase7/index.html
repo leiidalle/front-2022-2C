@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            color:red;
+            text-decoration: none;
+        }
+        ul {
+            list-style: circle;
+        }
+        
+        .links li a {
+            color:green
+        }
+
+        .texto-color {
+            color:blue
+        }
+
+        #texto-color {
+            color:purple
+        }
+
+        .texto-color.important {
+            color:aqua !important
+        }
+
+        /* selector de atributos */
+        [href] {
+            /*background-color: blueviolet;*/
+            text-decoration: line-through;
+        }
+        [href$=3] {
+            text-decoration: underline;
+        }
+
+        [id="nosotros"] {
+            background-color: red;
+        }
+        [id="galería"] {
+            background-color: red;
+        }
+        /*inicie con algo*/
+        [id^="re"] {
+            background-color: burlywood;
+        }
+        [id*="ale"] {
+            font-size: 25px;
+            color: blue;
+            padding: 15px;
+        }
+        /*termine con algo*/
+        [id$="os"] {
+            color: whitesmoke;
+            background-color: black;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <section>
+            <header>
+                <nav>
+                    <ul class="links">
+                        <li>
+                            <a href="anosotros">Link1</a>
+                        </li>
+                        <li>
+                            <a href="link2">Link2</a>
+                        </li>
+                        <li>
+                            <a href="link3">Link3</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
+        <section>
+            <p style="color:red" class="texto-color texto-color.important">Parrafo</p>
+        </section>
+
+        <section>  
+            <fieldset>
+            <legend>Oficiales</legend>
+            <form method="POST">
+                <input type="file">
+                <button>Enviar</button>
+            </form>
+            
+        </fieldset>
+        <br/>
+        <div class="fieldset">
+            <legend>Oficiales</legend>
+            <form method="POST">
+                <input type="file">
+                <button>Enviar</button>
+        </div>
+</section>
+    <section id="nosotros">
+        <h3>Nosotros</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In molestiae iure doloribus sequi quisquam aspernatur excepturi possimus illum quod delectus nihil magni temporibus error fugit consectetur maiores incidunt, voluptatum facilis?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam soluta excepturi doloremque, odio reprehenderit ipsa commodi nisi adipisci quia aspernatur cupiditate exercitationem perspiciatis iure neque veritatis earum molestias quasi eum?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sed nihil ea repellendus recusandae obcaecati ipsa illo, quo quisquam, ratione numquam laboriosam, quibusdam id a voluptate nesciunt accusantium adipisci maiores.</p>
+        
+    </section>
+    <section id="contacto">
+        <h3>Contacto</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In molestiae iure doloribus sequi quisquam aspernatur excepturi possimus illum quod delectus nihil magni temporibus error fugit consectetur maiores incidunt, voluptatum facilis?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam soluta excepturi doloremque, odio reprehenderit ipsa commodi nisi adipisci quia aspernatur cupiditate exercitationem perspiciatis iure neque veritatis earum molestias quasi eum?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sed nihil ea repellendus recusandae obcaecati ipsa illo, quo quisquam, ratione numquam laboriosam, quibusdam id a voluptate nesciunt accusantium adipisci maiores.</p>
+        
+    </section>
+    <section id="galería">
+        <h3>Galería</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In molestiae iure doloribus sequi quisquam aspernatur excepturi possimus illum quod delectus nihil magni temporibus error fugit consectetur maiores incidunt, voluptatum facilis?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam soluta excepturi doloremque, odio reprehenderit ipsa commodi nisi adipisci quia aspernatur cupiditate exercitationem perspiciatis iure neque veritatis earum molestias quasi eum?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sed nihil ea repellendus recusandae obcaecati ipsa illo, quo quisquam, ratione numquam laboriosam, quibusdam id a voluptate nesciunt accusantium adipisci maiores.</p>
+        
+    </section>
+    </main>
+</body>
+</html>
