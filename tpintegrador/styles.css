@@ -1,0 +1,10 @@
+.imgbg {
+    background-image: url(../tpintegrador/ba1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.container1 {
+    width: 800px;
+}
