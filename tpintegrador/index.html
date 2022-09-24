@@ -20,8 +20,8 @@
               </button>
                 </div>
                 <div class="col-8">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent justify-content-end">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 small justify-content-end">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 small justify-content-end" style="width: 100%;">
                   <li class="nav-item">
                     <a class="nav-link text-white" href="#">La conferencia</a>
                   </li>
@@ -42,12 +42,13 @@
               </div>
           </nav>
     </header>
-    <section class="container-flex">
-        <div class="row imgbg">
+    <main class="container-fluid display-inline m-0 p-0 col-md col-lg col-xl col-sm">
+      <section class="container-flex m-0 p-0">
+        <div class="row imgbg m-0 p-0">
               <div class="col-6"></div>
               <div class="col-6 text-white mt-5">
-              <h1 class="text-left">Conf Bs As</h1>
-              <p class="text-left">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y esperiencia de los expertos que está creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+              <h1 class="text-left position-relative mt-5">Conf Bs As</h1>
+              <p class="text-left position-relative">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y esperiencia de los expertos que está creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
               <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
               <button type="button" class="btn btn-success">Comprar tickets</button>
             </div>
@@ -55,10 +56,9 @@
         </div>
       </section>
     <section>
-        <p class="font-weight-light text-center mb-0"><small>CONOCE A LOS</small></p>
+        <p class="font-weight-light text-center mb-0 mt-2"><small>CONOCE A LOS</small></p>
         <h4 class="text-center">ORADORES<h4>
     </section>
-    <main class="container-fluid display-inline">
       <section class="container-fluid container1">
         <section class="row justify-content-center">
         <div class="col-4">
@@ -100,12 +100,12 @@
   </section>
   <section class="container-flex">
   <section class="container-flex">
-    <div class="row">
-      <div class="col-6">
-        <img src="../tpintegrador/honolulu.jpg">
+    <div class="row" style="height: 500px;">
+      <div class="col-6 p-0" style="height: 500px;">
+        <img src="../tpintegrador/honolulu.jpg" style="height: 100%; width: auto;">
       </div>
       <div class="col-6 bg-dark text-light">
-        <h4>Bs As - Octubre</h4>
+        <h4 class="text-light mt-5">Bs As - Octubre</h4>
         <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km2 de superficie).</p>
         <button type="button" class="btn btn-outline-light">Conocé Más</button>
       </div>
@@ -114,31 +114,31 @@
   <section>
     <p class="font-weight-light text-center mb-0"><small>CONVIÉRTETE EN UN</small></p>
     <h3 class="text-center">ORADOR<h3>
-    <p class="text-center font-weight-light mb-0"><small>Anótate como orador para dar una charla ignite. Cuéntate de qué quieres hablar!</small></p>
+    <h6 class="text-center font-weight-light text-mute mb-0"><small>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</small></h6>
   </section>
   <section class="container-flex justify-content-center m-0 p-0" style="width: 100%;">
-    <div class="container-flex justify-content-center container2">
-    <form>
-      <div class="row justify-content-center">
+    <form class="row justify-content-center">
         <div class="col-6 m-0 p-0" style="width: 250px;">
           <input type="text" class="form-control" placeholder="Nombre" style="width: 250px">
-        </div>
-        <div class="col-6 m-0 p-0" style="width: 250px;">
+         </div>
+         <div class="col-6 m-0 p-0" style="width: 250px;"> 
           <input type="text" class="form-control" placeholder="Apellido" style="width: 250px">
+         </div>
+        </form>
+  </section>
+      <section class="container-flex justify-content-center" style="width: 100%;">
+        <div class="row justify-content-center text-center">
+        <input type="text" class="form-control justify-content-center" placeholder="Sobre qué quieres hablar?" style="width:500px; height: 100px; margin-bottom: 4px;">
+        <div class="justify-content-center text-center"><h6 class="text-muted justify-content-center" style="width: 100%;"><small class="justify-content-center">Recuerda incluir un título para tu charla</small></h6></div> 
+        <div class="d-grid gap-2 justify-content-center" style="width: 100%;">
+          <button class="btn btn-success" type="button" style="width: 500px;;">Enviar</button>
         </div>
       </div>
-    </form>
-    <section class="justify-content-center">
-        <input type="text" class="form-control" placeholder="Sobre qué quieres hablar?" style="width:100%; height: 100px; margin-bottom: 4px;">
-        <small class="text-muted">Recuerda incluir un título para tu charla</small>
-        <div class="d-grid gap-2">
-          <button class="btn btn-success" type="button">Enviar</button>
       </section>
-        </div>
-    </div>
   </section>
-  <section class="bg-dark m-0 p-0">
-    <div class="container-fluid" style="width: 700px;">
+</br>
+  <section class="bg-dark justify-content-center m-0 p-0">
+    <div class="container-fluid justify-content-center p-0 m-0">
       <ul class="nav justify-content-center">
         <li class="nav-item">
           <a class="nav-link text-light" href="#"><small>Preguntas frecuentes</small></a>
@@ -155,7 +155,7 @@
         <li class="nav-item">
           <a class="nav-link text-light" href="#"><small>Términos y condiciones</small></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item ">
           <a class="nav-link text-light" href="#"><small>Privacidad</small></a>
         </li>
         <li class="nav-item">
@@ -165,5 +165,6 @@
     </div>
   </section>
 </section>
+</main>
 </body>
 </html>
