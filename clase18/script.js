@@ -46,3 +46,7 @@ function listarPalabras() {
        }
     document.getElementById('listado').appendChild(ul);
 }
+
+function validar(valuePalabra) {
+    return valuePalabra !== '';
+}
