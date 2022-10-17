@@ -38,10 +38,10 @@ function Navbar(props) {
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                     </li>
                 </ul>
-                <form class="d-flex">
+                <div class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="claveBusqueda">
-                    <button class="btn btn-outline-success" type="submit" onclick="buscar(document.getElementById('clavebusqueda')?.value)">Search</button>
-                </form>
+                    <button class="btn btn-outline-success" type="button" onclick="buscar(document.getElementById('claveBusqueda').value)">Search</button>
+                </div>
                 </div>
             </div>
         </nav>
@@ -50,6 +50,6 @@ function Navbar(props) {
     //dibuje 
     divHtml.innerHTML = html;
 
-    props.fnTest();//invocar la funcion
+    //props.fnTest();//invocar la funcion
     //return html;
 }
