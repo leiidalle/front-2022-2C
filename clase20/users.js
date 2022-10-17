@@ -12,12 +12,15 @@ function Users(userJson) {
             </tr>
             </thead>
             <tbody>
-                ${userJson.data.map(user=>User(user)).join('')}
+                ${userJson.map(user=>User(user)).join('')}
             </tbody>
         </table>
     `;
+   
 
-    return html;
+    document.getElementById('users').innerHTML = html;
+
+    //return html;
 }
 
 function User(user) {
