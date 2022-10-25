@@ -1,21 +1,50 @@
 const descuentoEstudiante = 0.8;
-const descuentoTrainee = 
+const descuentoTrainee = 0.5;
+const descuentoJunior = 0.15;
 
-function calcularResumen(valorDescuento, valorEntrada, cantidadEntradas) {
-    const valorResumen;
-    return valorResumen
+
+/*const Estudiante = document.getElementById('Estudiante').value;
+const Trainee = document.getElementById('Trainee').value;
+const Junior = document.getElementById('Junior').value;*/
+
+function obtenerTipoConsumidor(Categoria) {
+    if (Categoria === 'Estudiante') {
+        tipoDescuento = descuentoEstudiante
+    } else if (Categoria === 'Trainee') {
+        tipoDescuento = descuentoTrainee;
+      } else if (Categoria === 'Junior') {
+        tipoDescuento = descuentoJunior;
+      }
+      else {
+        tipoDescuento = '';
+      }
+    return tipoDescuento
+};
+
+function calcularPrecio(tipoDescuento, cantidadEntradas, valorEntrada) {
+    const precioFinal = ((cantidadEntradas * valorEntrada) - (tipoDescuento * (valorEntrada * cantidadEntradas)))
+    return precioFinal
+};
+
+function obtenerResumen() {
+    const cantidadEntradas = document.getElementById('Cantidad').value;
+    const categoria = document.getElementById('Categoria').value;
+    const valorEntrada = 200;
+    const tipoDescuento = obtenerTipoConsumidor(categoria);
+    const precioFinal = calcularPrecio(tipoDescuento, cantidadEntradas, valorEntrada);
+    return precioFinal
 }
 
-function calcularDescuento(tipoConsumidor) {
-    const valorDescuento;
-    return valorDescuento
-}
+/*function limpiarFormulario() {
+    document.getElementById("form1").reset();
+    document.getElementById("form2").reset();
+  }*/
 
-const tipoConsumidor = document.getElementById('Lista')
+  console.log(obtenerResumen);
 
-const descuentoCalculado = calcularDescuento(tipoConsumidor)
 
-const precio = 200
-const numeroEntradas = document.getElementById('Cantidad')
+  function textResumen() {
+    var inputF = document.getElementById("text1");
+    inputF.value = obtenerResumen(); }
 
-const valorResumen = calcularResumen(descuentoCalculado, precio, numeroEntradas)
+    document.getElementById('Resumen').addEventListener("click", textResumen())

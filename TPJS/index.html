@@ -92,7 +92,7 @@
     </section>
     <br>
     <section class="container-flex justify-content-center m-0 p-0" style="width: 100%;">
-        <form class="row justify-content-center">
+        <form id = "form1" class="row justify-content-center">
             <div class="col-6 m-1 p-0" style="width: 25%;">
               <input type="text" class="form-control" placeholder="Nombre" style="width: 100%">
              </div>
@@ -108,34 +108,34 @@
         </form>
     <section>
         <div class="container-fluid">
-            <div class="row justify-content-center">
+            <div id = "form2" class="row justify-content-center">
                 <div class="col-6 m-1 p-0" style="width: 25%;">
                     <label for="Cantidad" class="form-label">Cantidad</label>
-                    <input type="text" class="form-control" placeholder="Cantidad" style="width: 100%">
+                    <input id="Cantidad" type="text" class="form-control" placeholder="Cantidad" style="width: 100%">
                 </div>
                 <br>
                 <div class="col-6 m-1 p-0" style="width: 25%;">
-                    <label for="Categoria" class="form-label" style="width: 100%;">Categoria</label>
-                    <select class="form-select" aria-label="Lista">
-                        <option selected="1">Estudiante</option>
-                        <option value="2">Trainee</option>
-                        <option value="3">Junior</option>
+                    <label for="Categoria" class="form-label" style="width: 100%;">Categoria</label> 
+                    <select id= "Categoria" class="form-select" aria-label="Lista">
+                        <option id="Estudiante" selected="1">Estudiante</option>
+                        <option id="Trainee" value="2">Trainee</option>
+                        <option id="Junior" value="3">Junior</option>
                       </select>
                 </div>
                 <br>
                 <div class="row justify-content-center m-0 p-0">
                 <div class="m-0 p-0" style="width: 50%;">
                         <label for="Resultado" class="form-label"></label>
-                        <input type="text" class="form-control mb-4 bg-primary text-primary" style="--bs-bg-opacity: .25;" id="Resultado" placeholder="Total a Pagar: $">
+                        <input id="text1" type="text" class="form-control mb-4 bg-primary text-primary" style="--bs-bg-opacity: .25;" id="Resultado" placeholder="Total a Pagar: $">
                 </div>
                 </div>
                 <br>
                 <div class="row justify-content-center m-0 p-0">
                 <div class="col-6 m-1 p-0" style="width: 25%;">
-                <button type="Borrar" class="btn btn-success" style="width: 100%;">Borrar</button>
+                <button onclick="limpiarFormulario()" class="btn btn-success" style="width: 100%;">Borrar</button>
                 </div>
                 <div class="col-6 m-1 p-0" style="width: 25%;">
-                <button type="Resumen" class="btn btn-success" style="width: 100%;">Resumen</button>
+                <button id = "Resumen" onclick="obtenerResumen()" class="btn btn-success" style="width: 100%;">Resumen</button>
                 </div>
                 </div>
             </div>
