@@ -123,22 +123,22 @@
                       </select>
                 </div>
                 <br>
-                <div class="row justify-content-center m-0 p-0">
-                <div class="m-0 p-0" style="width: 50%;">
-                        <label for="Resultado" class="form-label"></label>
-                        <input id="text1" type="text" class="form-control mb-4 bg-primary text-primary" style="--bs-bg-opacity: .25;" id="Resultado" placeholder="Total a Pagar: $">
+                <div class="row justify-content-center m-0 p-0" type="form">
+                <div class="mt-2 pt-2" style="width: 50%;">
+                  <div class="col-12">
+                    <p id="textoResultado" class= "alert alert-primary rounded border-primary">Total a pagar: <span id="Total"
+                            class="Total">$ </span></p>
+                </div>
                 </div>
                 </div>
                 <br>
-                <div class="row justify-content-center m-0 p-0">
                 <div class="col-6 m-1 p-0" style="width: 25%;">
-                <button onclick="limpiarFormulario()" class="btn btn-success" style="width: 100%;">Borrar</button>
+                <input class="btn btn-success" type="reset" id="Borrar" value="Borrar" style="width: 100%;"></button>
                 </div>
                 <div class="col-6 m-1 p-0" style="width: 25%;">
-                <button id = "Resumen" onclick="obtenerResumen()" class="btn btn-success" style="width: 100%;">Resumen</button>
+                <button id = "Resumen" type="submit" onclick="Resumen()" class="btn btn-success" style="width: 100%;">Resumen</button>
                 </div>
-                </div>
-            </div>
+              </div>
         </div>
     </section>
     <br>
